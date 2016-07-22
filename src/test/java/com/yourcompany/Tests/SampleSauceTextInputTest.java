@@ -32,7 +32,7 @@ public class SampleSauceTextInputTest extends SampleSauceTestBase {
         String emailInputText = "abc@gmail.com";
 
         // Navigate to the page
-        driver.get("http://ccloud-apache05017.kdc.capitalone.com:8080/dealerportal/#/login");
+        driver.get("https://dnav-pp.capitalone.com/#/login");
 
         // get page object
         GuineaPigPage page = GuineaPigPage.getPage(driver);
