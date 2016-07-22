@@ -28,7 +28,7 @@ public class SampleSauceTextInputTest extends SampleSauceTestBase {
      * @throws InvalidElementStateException
      */
     @Test
-    public void verifyEmailInputTest() throws InvalidElementStateException {
+    public void verifyDealerNavigatorLogin() throws InvalidElementStateException {
         String emailInputText = "abc@gmail.com";
 
         // Navigate to the page
