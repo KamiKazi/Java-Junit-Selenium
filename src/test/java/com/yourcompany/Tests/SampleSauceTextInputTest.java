@@ -5,7 +5,10 @@ import com.yourcompany.Pages.*;
 import com.yourcompany.TestRules.Retry;
 import com.yourcompany.Tests.SampleSauceTestBase;
 import org.junit.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.InvalidElementStateException;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.UUID;
 
@@ -33,9 +36,13 @@ public class SampleSauceTextInputTest extends SampleSauceTestBase {
 
         // Navigate to the page
         driver.get("https://dnav-pp.capitalone.com/#/login");
+
+        //assertEquals(page.getEmailText(), emailInputText);
         
         WebDriverWait wait = new WebDriverWait(driver, 5);
 		wait.until(ExpectedConditions.elementToBeClickable(By.id("userName")));
+
+        assertEquals("Capital One", driver.getTitle());
 
         // get page object
         GuineaPigPage page = GuineaPigPage.getPage(driver);
