@@ -32,7 +32,7 @@ public class SampleSauceTextInputTest extends SampleSauceTestBase {
         String emailInputText = "abc@gmail.com";
 
         // Navigate to the page
-        driver.get("https://saucelabs.com/test/guinea-pig");
+        driver.get("http://ccloud-apache05017.kdc.capitalone.com:8080/dealerportal/#/login");
 
         // get page object
         GuineaPigPage page = GuineaPigPage.getPage(driver);
@@ -41,13 +41,13 @@ public class SampleSauceTextInputTest extends SampleSauceTestBase {
          enterEmailText page is an exposed "service",
              which interacts with the email input field element by sending text to it.
         */
-        page.enterEmailText(emailInputText);
+        // page.enterEmailText(emailInputText);
 
         /*
          Assertions should be part of test and not part of Page object.
          Each test should be verifying one piece of functionality (atomic testing)
         */
-        assertEquals(page.getEmailText(), emailInputText);
+        // assertEquals(page.getEmailText(), emailInputText);
 
     }
 
