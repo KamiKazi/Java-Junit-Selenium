@@ -33,6 +33,9 @@ public class SampleSauceTextInputTest extends SampleSauceTestBase {
 
         // Navigate to the page
         driver.get("https://dnav-pp.capitalone.com/#/login");
+        
+        WebDriverWait wait = new WebDriverWait(driver, 5);
+		wait.until(ExpectedConditions.elementToBeClickable(By.id("userName")));
 
         // get page object
         GuineaPigPage page = GuineaPigPage.getPage(driver);
