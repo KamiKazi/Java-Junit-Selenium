@@ -55,27 +55,27 @@ public class SampleSauceTextInputTest extends SampleSauceTestBase {
      * Runs a simple test verifying if the comment input is functional.
      * @throws InvalidElementStateException
      */
-    @Test
-    @Retry
-    public void verifyCommentInputTest() throws InvalidElementStateException {
-        String commentInputText = UUID.randomUUID().toString();
+    // @Test
+    // @Retry
+    // public void verifyCommentInputTest() throws InvalidElementStateException {
+    //     String commentInputText = UUID.randomUUID().toString();
 
-        driver.get("https://saucelabs.com/test/guinea-pig");
+    //     driver.get("https://saucelabs.com/test/guinea-pig");
 
-        // Navigate to the page
-        GuineaPigPage page = GuineaPigPage.getPage(driver);
+    //     // Navigate to the page
+    //     GuineaPigPage page = GuineaPigPage.getPage(driver);
 
-        /*
-         enterCommentText page is an exposed "service",
-             which interacts with the email input field element by sending text to it.
-        */
-        page.enterCommentText(commentInputText);
+    //     /*
+    //      enterCommentText page is an exposed "service",
+    //          which interacts with the email input field element by sending text to it.
+    //     */
+    //     page.enterCommentText(commentInputText);
 
-        /*
-         Assertions should be part of test and not part of Page object.
-         Each test should be verifying one piece of functionality (atomic testing)
-        */
-        assertEquals(commentInputText, page.getCommentText());
+    //     /*
+    //      Assertions should be part of test and not part of Page object.
+    //      Each test should be verifying one piece of functionality (atomic testing)
+    //     */
+    //     assertEquals(commentInputText, page.getCommentText());
 
-    }
+    // }
 }
