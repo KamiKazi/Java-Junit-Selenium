@@ -35,7 +35,7 @@ public class SampleSauceTextInputTest extends SampleSauceTestBase {
         String emailInputText = "abc@gmail.com";
 
         // Navigate to the page
-        driver.get("https://dnav-pp1b.capitalone.com/#/login");
+        driver.get("https://dealernavigator.capitalone.com/index.html#/login");
 
         //assertEquals(page.getEmailText(), emailInputText);
         
